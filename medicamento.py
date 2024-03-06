@@ -47,3 +47,4 @@ class Medicamento():
         if self == other:
             self.stock += other.stock
         return self
+    

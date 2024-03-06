@@ -18,7 +18,7 @@ while opcion_ingreso == 1:
 
         # Sumar el stock al medicamento existente
         indice = ingresados.index(m)
-        ingresados[indice] += m
+        ingresados[indice] = ingresados[indice] + m
 
         # Código modificado. Llama a los atributos del objeto ya existente
         nombre = ingresados[indice].nombre
@@ -69,4 +69,4 @@ for index, ing in enumerate(ingresados):
     print(f"Precio bruto: {ing.precio_bruto}")
     print(f"Precio final: {ing.precio_final}")
     print(f"Descuento: {ing.descuento}")
-    
+  
